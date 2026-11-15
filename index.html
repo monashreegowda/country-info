@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <div class="header">
+      <h1>Country Explorer</h1>
+      <p>Search for any country to see its details</p>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Enter country name (e.g., India)" />
+      <button id="searchBtn" onclick="searchCountry()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <!-- Loading Text -->
+    <div id="loading" class="loading-text">Loading...</div>
+
+    <!-- Error Message (Hidden by default) -->
+    <div id="errorBox" class="error-box">
+      <i class="fa-solid fa-triangle-exclamation"></i> Country not found. Please check your spelling.
+    </div>
+
+    <!-- Result Card (Hidden by default) -->
+    <div id="countryCard" class="country-card">
+      <!-- Content will be injected here via JavaScript -->
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
